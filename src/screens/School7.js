@@ -38,9 +38,9 @@ export default function School7() {
             <h3 className="school-name">{school.name}</h3>
             <p className="description">{school.tagline}</p>
             
-            <a href="#" className="read-more">
+            <button className="link-btn">Read More</button>
+
               {school.link}
-            </a>
           </div>
         ))}
       </div>
