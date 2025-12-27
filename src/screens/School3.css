@@ -1,0 +1,144 @@
+.school3-container {
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.school3-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* ---------- TEXT SIDE ---------- */
+.text-side {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* Subheading */
+.text-side h1.highlight {
+  font-size: 26px;
+  color: #fb923c;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Main heading */
+.text-side h2.two {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.text-side h2 .highlight {
+  color: #fb923c;
+  font-size: 36px;
+}
+
+.text-side p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+/* ---------- BUTTON ---------- */
+.btn-get-started {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: white;
+  padding: 16px 45px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(249, 115, 22, 0.5);
+}
+
+/* ---------- IMAGE SIDE ---------- */
+.image-side {
+  flex: 1;
+  position: relative;
+  min-height: 500px;
+}
+
+.image-card {
+  position: absolute;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Image positions */
+.card-1 {
+  width: 280px;
+  height: 380px;
+  top: 0;
+  left: 50px;
+  transform: rotate(-8deg);
+}
+
+.card-2 {
+  width: 260px;
+  height: 360px;
+  top: 80px;
+  right: 20px;
+  transform: rotate(12deg);
+}
+
+.card-3 {
+  width: 380px;
+  height: 280px;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-5deg);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 968px) {
+  .school3-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .text-side h1.highlight {
+    font-size: 20px;
+  }
+
+  .text-side h2.two {
+    font-size: 28px;
+  }
+
+  .text-side h2 .highlight {
+    font-size: 28px;
+  }
+
+  .image-side {
+    min-height: 400px;
+  }
+}

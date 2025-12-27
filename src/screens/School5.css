@@ -1,0 +1,188 @@
+/* ============================
+   SCHOOL5 SECTION STYLES
+============================ */
+.school5-container {
+  background: #0f172a
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%23fb923c" opacity="0.1"/></svg>')
+    repeat;
+  min-height: 100vh;
+  padding: 80px 40px;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+/* Layout */
+.school5-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.school5-heading {
+  font-size: 1.8rem !important;  /* 🔽 smaller font size */
+  font-weight: 600;
+  color: #f8fafc;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.school5-heading span {
+  color: #38bdf8;
+  font-weight: 700;
+}
+/* ============================
+   LEFT TEXT SECTION
+============================ */
+.text-content {
+  flex: 1;
+  min-width: 320px;
+}
+
+.top-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fb923c;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.text-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 20px 0 30px;
+}
+
+.text-content h1 span {
+  color: #fcd34d;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e2e8f0;
+  max-width: 600px;
+}
+
+/* ============================
+   RIGHT IMAGE SECTION
+============================ */
+.mobile-mockups {
+  flex: 1;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile mockup image styles */
+.mobile-left,
+.mobile-right {
+  position: absolute;
+  width: 220px; /* fixed size */
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+.mobile-left {
+  top: 30px;
+  left: 0;
+  transform: rotate(-10deg);
+  z-index: 2;
+}
+
+.mobile-right {
+  top: 0;
+  right: 0;
+  transform: rotate(8deg);
+  z-index: 1;
+}
+
+/* ============================
+   BOTTOM DOTS
+============================ */
+.dots {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #475569;
+  border-radius: 50%;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #fb923c;
+  width: 40px;
+  border-radius: 20px;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+@media (max-width: 1024px) {
+  .school5-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .top-title {
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 42px;
+  }
+
+  .mobile-mockups {
+    min-height: 350px;
+  }
+
+  .mobile-left,
+  .mobile-right {
+    position: static;
+    transform: none;
+    margin: 10px auto;
+    display: block;
+    width: 200px; /* Smaller for tablets */
+  }
+}
+
+@media (max-width: 640px) {
+  .text-content h1 {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .mobile-mockups {
+    min-height: 300px;
+  }
+
+  .mobile-left,
+  .mobile-right {
+    width: 170px; /* Perfect size for phones */
+  }
+}

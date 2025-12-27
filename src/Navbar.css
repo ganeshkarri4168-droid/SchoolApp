@@ -1,0 +1,70 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo on left, links on right */
+  padding: 12px 40px;
+  background-color:  #ffe4d6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-title {
+  font-weight: bold;
+  font-size:  0.2rem;
+}
+
+.navbar-tagline {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-buttons .btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.navbar-buttons {
+  display: flex;
+  gap: 10px; /* Optional: adds spacing between buttons */
+}
+
+.talk-ai {
+  background-color: #f0c040;
+  color: #000;
+  border-radius: 30px;
+}
+
+.contact-us {
+  background-color: #e53935;
+  color: #fff;
+  border-radius: 30px;
+}
